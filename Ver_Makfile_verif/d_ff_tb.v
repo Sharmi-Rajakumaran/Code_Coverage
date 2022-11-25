@@ -3,7 +3,7 @@ module d_ff_tb();
  wire q;
  
  // Module Instantiation
- dff DUT()
+ d_ff DUT(.d0, d1, sel, clk, rst, q);
  
     
   
