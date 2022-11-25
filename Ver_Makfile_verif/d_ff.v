@@ -9,10 +9,11 @@ module d_ff(input d0, d1, sel, clk, rst, q);
           0 : d = d0;
           1 : d = d1;
           default: d = 1'b0;
+      endcase
     end
   
   always@(posedge clk or posedge rst)
-    begin
+  
     begin
       if(rst)
         q<=1'b0;
@@ -21,7 +22,7 @@ module d_ff(input d0, d1, sel, clk, rst, q);
     end
         assign qbar = ~q;
         
-     end
+    
         
    endmodule
    
