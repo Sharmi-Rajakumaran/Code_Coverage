@@ -1,6 +1,6 @@
-module d_ff(input d0, d1, sel, clk, rst, q);
-  input d0,d1,sel,clk,rst;
-  output reg q;
+module d_ff(input d0, d1, sel, clk, rst,output reg q);
+  
+
   reg d;
   
   always@(d0 or d1 or sel)
